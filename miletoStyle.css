@@ -1,0 +1,73 @@
+body {
+	background-color: black;
+	color: white;
+	margin: 0;
+	font-family: Arial, Helvetica, sans serif;
+}
+	
+td {
+	border: 1px solid black;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	background-color: white;
+}
+
+table {
+	border: 0px;
+	padding: 0px;
+	border-spacing: 0px;
+	color: black;
+	margin: 0;
+}
+
+div.topnav {
+	overflow: hidden;
+	background-color: #202020;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 31px;
+}
+
+.topnav span {
+	float: left;
+	color: #f2f2f2;
+	padding: 7px 8px;
+	padding-left: 80px;
+	width: 70px;
+	font-size: 18px;
+	# font-weight: bold;
+}
+
+.topnav a {
+	float: right;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 8px 0px;
+	width: 70px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.topnav a:hover {
+	background-color: #4CAF50;
+	color: black;
+}
+
+div.corpo {
+	padding-right: 80px;
+	padding-left: 80px;
+	padding-top: 50px;
+}
+
+table.servicos {
+	margin-top: 30px;
+	padding: 0px;
+	border: 0px;
+	width: 100%;
+}
+
+table.servicos td {
+	height: 200px;	
+}
