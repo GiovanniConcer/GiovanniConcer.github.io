@@ -3,18 +3,6 @@
 <title>Mileto</title>
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
 <link rel="icon" href="logo01.png" />
-<style type="text/css">
-	a.MiletoButton {
-		background-color: gray;
-		color: white;
-		padding: 5px;
-		position: absolute;
-		top: 50px;
-		left: 10px;			
-		z-index: 999999;
-		text-decoration: none;
-	}
-</style>
 <script>
 	if (window.addEventListener) { // Mozilla, Netscape, Firefox
     		window.addEventListener('load', WindowLoad, false);
@@ -23,7 +11,6 @@
 	}
 
 	function WindowLoad(event) {
-    		alert("Another onload script");
 		resize();
 	}
 	function resize() {
@@ -35,14 +22,9 @@
 			alert("Screen.width > 900");	
 		}
 	}
-	function test() {
-		alert("Alert Box!!");	
-	}
 </script>
 </head>
 <body style="margin: 0; padding: 0">
-	
-<a class="MiletoButton" href="#" onclick="test()">TESTE</a>
 	
 <iframe src="https://miletosc.wixsite.com/home" style="position:fixed; top:-51px; left:0px; bottom:0px; right:0px; width:100%; height:108%; border:none; margin:0; padding:0; overflow:hidden; z-index:999998;" />
 	
