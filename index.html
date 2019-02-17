@@ -14,8 +14,9 @@
 		resize();
 	}
 	function resize() {
-		alert("Chegou aqui...?");
-		if (screen.width <= 900) {
+		var width = document.getElementById("miletoFrame").contentWindow.document.body.scrollWidth;
+		alert("page width: " + width);
+		if (width <= 900) {
 			alert("Redirecting...");
 			document.location = "https://miletosc.wixsite.com/home";
 		} else {
@@ -26,7 +27,7 @@
 </head>
 <body style="margin: 0; padding: 0">
 	
-<iframe src="https://miletosc.wixsite.com/home" style="position:fixed; top:-51px; left:0px; bottom:0px; right:0px; width:100%; height:108%; border:none; margin:0; padding:0; overflow:hidden; z-index:999998;" />
+<iframe id="miletoFrame" src="https://miletosc.wixsite.com/home" style="position:fixed; top:-51px; left:0px; bottom:0px; right:0px; width:100%; height:108%; border:none; margin:0; padding:0; overflow:hidden; z-index:999998;" />
 	
 </body>
 </html>
