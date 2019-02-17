@@ -2,6 +2,7 @@
 <head>
 <title>Mileto</title>
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="icon" href="logo01.png" />
 <script>
 	if (window.addEventListener) { // Mozilla, Netscape, Firefox
@@ -14,13 +15,14 @@
 		resize();
 	}
 	function resize() {
-		var width = document.getElementById("miletoFrame").contentWindow.document.body.scrollWidth;
-		alert("page width: " + width);
-		if (width <= 900) {
+		//var width = document.getElementById("miletoFrame").contentWindow.document.body.scrollWidth;
+		var frame = $(window).width();
+		alert("page width: " + frame);
+		if (frame <= 900) {
 			alert("Redirecting...");
-			document.location = "https://miletosc.wixsite.com/home";
+			//document.location = "https://miletosc.wixsite.com/home";
 		} else {
-			alert("Screen.width > 900");	
+			alert("Screen.width > 900");
 		}
 	}
 </script>
